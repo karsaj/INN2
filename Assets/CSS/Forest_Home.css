@@ -1,0 +1,64 @@
+body {
+	background-image: url(../../App_Themes/Forest/Images/homepage/bg_tile.gif);
+}
+#mainwrapper {
+	background-image: url(../..//App_Themes/Forest/Images/homepage/main_bg.png);
+}
+#topShadow {
+	background-image: url(../../App_Themes/Forest/Images/homepage/top_shadow.png);
+}
+
+#branding {bottom: 30px;}
+
+* html #branding {bottom: 32px;}
+
+#breadcrumbs {
+	bottom: 12px;
+	color: #D7CEC8; 
+ }
+#menu .menuHover {
+	background-color: #D7CEC8;
+	color: #7A715F;
+	background-image: url(../../App_Themes/Forest/Images/homepage/img_menu_hover.gif);
+}
+#menu .subMenu table {
+	background-color: #968D7E;
+	background-image: url(../../App_Themes/Forest/Images/homepage/subMenu_bg.gif);
+	background-repeat:repeat-y;
+}
+#menu .subMenuNormal {
+	color:#FFFFFF;
+	font-weight:bold;
+}
+#menu .subMenuHover td{
+	background-color:#D7CEC8;
+	background-image: url(../../App_Themes/Forest/Images/homepage/img_menu_hover.gif);
+	background-repeat:no-repeat;
+	color:#968D7E;
+}
+html>body #menu .subMenuHover{
+ 	background-color:#D7CEC8;
+	color: #968D7E;
+	background-image: url(../../App_Themes/Forest/Images/homepage/img_menu_hover.gif);
+	background-repeat:no-repeat;
+}
+html>body #menu .subMenuHover td{
+      background-color:transparent;
+      background-image:none;
+}
+#bottomShadow {
+	background-image: url(../../App_Themes/Forest/Images/homepage/bottom_shadow.png);
+}
+
+h1, h2, h3, h4, h5, h6 {color: #7A715F;}
+
+.leftColumn {
+	float: left;
+	display:inline;
+	width: 40%;
+}
+.rightColumn {
+	float: right;
+	display:inline;
+	width: 40%;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- 
+    Note: As an alternative to hand editing this file you can use the 
+    web admin tool to configure settings for your application. Use
+    the Website->Asp.Net Configuration option in Visual Studio.
+    A full list of settings and comments can be found in 
+    machine.config.comments usually located in 
+    \Windows\Microsoft.Net\Framework\v2.x\Config 
+-->
+<configuration>
+	<appSettings/>
+	<connectionStrings>
+		<add name="NorthwindConnectionString" 
+			connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\northwind.mdf;Integrated Security=True;User Instance=True"
+			providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	<system.web>
+		
+    <compilation debug="false" strict="false" explicit="true" />
+      <expressionBuilders>
+        <add expressionPrefix="Themes" type="ThemesExpressionBuilder"/>
+      </expressionBuilders>
+    </compilation>
+    
+	<authentication mode="Windows"/>
+
+    <!-- Use any of the following values for the styleSheetTheme attribute: "Fruits", "Forest", "Literature".-->
+    <pages styleSheetTheme="Fruits" />    
+	</system.web>
+</configuration>

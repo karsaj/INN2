@@ -1,0 +1,145 @@
+﻿<VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>ASP.NET Small Business Web Site Template</Name>
+		<Description>ASP.NET Small Business Web Application Template</Description>
+		<Icon Package="{39c9c826-8ef8-4079-8c95-428f5b1c323f}" ID="4701"/>
+		<ProjectType>Web</ProjectType>
+		<ProjectSubType>VisualBasic</ProjectSubType>
+		<SortOrder>50</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>Small Business</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+		<EnableEditOfLocationField>true</EnableEditOfLocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<LocationField>hidden</LocationField>
+	</TemplateData>
+	<TemplateContent>
+		<Project File="SmallBusinessWebApplicationVB.webproj" ReplaceParameters="false">
+			<ProjectItem>About.aspx</ProjectItem>
+			<ProjectItem>Contact.aspx</ProjectItem>
+			<ProjectItem>Contact.aspx.vb</ProjectItem>
+			<ProjectItem>Default.aspx</ProjectItem>
+			<ProjectItem>Default.aspx.vb</ProjectItem>
+			<ProjectItem>EULA.rtf</ProjectItem>
+			<ProjectItem>MainTemplate.master</ProjectItem>
+			<ProjectItem>OtherPageOne.aspx</ProjectItem>
+			<ProjectItem>OtherPages.aspx</ProjectItem>
+			<ProjectItem>OtherPageTwo.aspx</ProjectItem>
+			<ProjectItem>Products.aspx</ProjectItem>
+			<ProjectItem>Web.config</ProjectItem>
+			<ProjectItem>Web.sitemap</ProjectItem>
+			<Folder Name="App_Code">
+				<ProjectItem>ThemesExpressionBuilder.vb</ProjectItem>
+			</Folder>
+			<Folder Name="App_Data">
+				<ProjectItem>Northwind.mdf</ProjectItem>
+				<ProjectItem>northwind_log.LDF</ProjectItem>
+			</Folder>
+			<Folder Name="App_Themes">
+				<Folder Name="Forest">
+					<ProjectItem>Default.skin</ProjectItem>
+					<ProjectItem>Styles.css</ProjectItem>
+					<Folder Name="Images">
+						<Folder Name="homepage">
+							<ProjectItem>bg_tile.gif</ProjectItem>
+							<ProjectItem>bottom_shadow.png</ProjectItem>
+							<ProjectItem>img_menu_hover.gif</ProjectItem>
+							<ProjectItem>main_bg.png</ProjectItem>
+							<ProjectItem>masthead.jpg</ProjectItem>
+							<ProjectItem>masthead_ie55.jpg</ProjectItem>
+							<ProjectItem>subMenu_bg.gif</ProjectItem>
+							<ProjectItem>top_shadow.png</ProjectItem>
+						</Folder>
+						<ProjectItem>bg_tile.gif</ProjectItem>
+						<ProjectItem>bottom_shadow.png</ProjectItem>
+						<ProjectItem>bullet.gif</ProjectItem>
+						<ProjectItem>flyout.gif</ProjectItem>
+						<ProjectItem>img_menu_active.gif</ProjectItem>
+						<ProjectItem>img_menu_hover.gif</ProjectItem>
+						<ProjectItem>logo_big.gif</ProjectItem>
+						<ProjectItem>logo_mini.gif</ProjectItem>
+						<ProjectItem>main_bg.png</ProjectItem>
+						<ProjectItem>masthead1.jpg</ProjectItem>
+						<ProjectItem>masthead2.jpg</ProjectItem>
+						<ProjectItem>masthead3.jpg</ProjectItem>
+						<ProjectItem>subMenu_bg.gif</ProjectItem>
+						<ProjectItem>top_shadow.png</ProjectItem>
+					</Folder>
+				</Folder>
+				<Folder Name="Fruits">
+					<ProjectItem>Default.skin</ProjectItem>
+					<ProjectItem>Styles.css</ProjectItem>
+					<Folder Name="Images">
+						<Folder Name="homepage">
+							<ProjectItem>bg_tile.gif</ProjectItem>
+							<ProjectItem>bottom_shadow.png</ProjectItem>
+							<ProjectItem>main_bg.png</ProjectItem>
+							<ProjectItem>masthead.jpg</ProjectItem>
+							<ProjectItem>masthead_ie55.jpg</ProjectItem>
+							<ProjectItem>top_shadow.png</ProjectItem>
+						</Folder>
+						<ProjectItem>bg_tile.gif</ProjectItem>
+						<ProjectItem>bottom_shadow.png</ProjectItem>
+						<ProjectItem>bullet.gif</ProjectItem>
+						<ProjectItem>flyout.gif</ProjectItem>
+						<ProjectItem>img_menu_active.gif</ProjectItem>
+						<ProjectItem>img_menu_hover.gif</ProjectItem>
+						<ProjectItem>logo_big.gif</ProjectItem>
+						<ProjectItem>logo_mini.gif</ProjectItem>
+						<ProjectItem>main_bg.png</ProjectItem>
+						<ProjectItem>masthead1.jpg</ProjectItem>
+						<ProjectItem>masthead2.jpg</ProjectItem>
+						<ProjectItem>masthead3.jpg</ProjectItem>
+						<ProjectItem>subMenu_bg.png</ProjectItem>
+						<ProjectItem>top_shadow.png</ProjectItem>
+					</Folder>
+				</Folder>
+				<Folder Name="Literature">
+					<ProjectItem>Default.skin</ProjectItem>
+					<ProjectItem>Styles.css</ProjectItem>
+					<Folder Name="Images">
+						<Folder Name="homepage">
+							<ProjectItem>bg_tile.gif</ProjectItem>
+							<ProjectItem>bottom_shadow.png</ProjectItem>
+							<ProjectItem>main_bg.png</ProjectItem>
+							<ProjectItem>masthead.jpg</ProjectItem>
+							<ProjectItem>masthead_ie55.jpg</ProjectItem>
+							<ProjectItem>top_shadow.png</ProjectItem>
+						</Folder>
+						<ProjectItem>bg_tile.gif</ProjectItem>
+						<ProjectItem>bottom_shadow.png</ProjectItem>
+						<ProjectItem>bullet.gif</ProjectItem>
+						<ProjectItem>flyout.gif</ProjectItem>
+						<ProjectItem>img_menu_active.gif</ProjectItem>
+						<ProjectItem>img_menu_hover.gif</ProjectItem>
+						<ProjectItem>logo_big.gif</ProjectItem>
+						<ProjectItem>main_bg.png</ProjectItem>
+						<ProjectItem>masthead1.jpg</ProjectItem>
+						<ProjectItem>masthead2.jpg</ProjectItem>
+						<ProjectItem>masthead3.jpg</ProjectItem>
+						<ProjectItem>top_shadow.png</ProjectItem>
+					</Folder>
+				</Folder>
+			</Folder>
+			<Folder Name="Assets">
+				<Folder Name="CSS">
+					<ProjectItem>Forest_Home.css</ProjectItem>
+					<ProjectItem>Literature_Home.css</ProjectItem>
+					<ProjectItem>Fruits_Home.css</ProjectItem>
+					<ProjectItem>Forest_ie7.css</ProjectItem>
+					<ProjectItem>Literature_ie7.css</ProjectItem>
+					<ProjectItem>Fruits_ie7.css</ProjectItem>
+				</Folder>		
+			</Folder>
+			<Folder Name="Documentation">
+				<ProjectItem>Commerce.htm</ProjectItem>
+				<ProjectItem>Default.css</ProjectItem>
+				<ProjectItem>Personal.htm</ProjectItem>
+				<ProjectItem>Corporate.htm</ProjectItem>
+				<ProjectItem>Default.htm</ProjectItem>
+				<ProjectItem>SmallBusiness.htm</ProjectItem>
+			</Folder>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

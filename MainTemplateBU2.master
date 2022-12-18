@@ -1,0 +1,79 @@
+<%@ Master Language="VB" AutoEventWireup="true" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head runat="server">
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="tabcontent.css" />
+
+    <title>Technical Writer/Marketing Communications Content</title>
+    
+    
+<meta name="description" content="Business, Marketing, Technical and Strategic Communications Content Development and Documentation Writer."/>
+<meta name="keywords" content="technical, writing, writer, Canada, Toronto, Montreal, Ottawa, Vancouver, Calgary, New York, Boston, information, architect, communications, copywriter, copy writers, copy writing, business writing, surveys, business, writers, marketing, documentation, document, documents, management, portal, content, manager, product, support, enterprise, knowledge, software, help, systems, communication, strategic, Crystal Reports, e-learning, online, learning, on-line, single sourcing, Common Criteria, Proposals, proposal, White Papers, white paper, web design, brochures, brochure, specialist, writers, developer, development, web, design, graphic, newsletter, nesletters, editing, editor, presentation, presentations, reporting, reports, report, press release, postcards, pamphlets, instructional, guides, manuals, user, administrator, installation, marketing, logo, logos"/>    
+
+<meta name="verify-v1" content="cAr+a4cYtXwVpmK8JfKPny9kcXMjqFPV9x0E0TgoNB8=" />
+<meta name="y_key" content="8ae7e51b79fcf672" /> 
+    
+    <!--[if IE 5]>
+        <style type="text/css">
+			td, th {
+				font-size: 0.76em;
+			}
+			#copy input {
+				height:1.5em;
+			}
+		</style>
+	<![endif]-->
+	
+	<asp:ContentPlaceHolder id="headEmbeds" runat="server">
+	    <link rel="shortcut icon" href="/favicon.ico" />
+	</asp:ContentPlaceHolder>
+	
+	<!--[if IE 7]>
+	<style type="text/css">		
+        @import url(<asp:Literal runat="server" Text="<%$ Themes:StylesheetTheme(~/Assets/CSS/{0}_ie7.css) %>" />);
+	</style>
+	<![endif]-->	
+</head>
+<body>
+    <form id="mainForm" runat="server">
+        <div id="mainwrapper">            
+            <div id="topShadow">&nbsp;<%-- Leave blank. --%></div>
+            <div id="header">
+				<span id="mastheadImage">	
+					<asp:ContentPlaceHolder ID="mastheadPh" runat="server">
+					    <%-- This placeholder contains the varying header images. Set the SkinID to 'masthead1', 'masthead2' or 'masthead3' to pick a different image. --%>
+						<asp:ImageMap ID="mastheadImg" runat="server" SkinID="masthead1"/>
+					</asp:ContentPlaceHolder>
+				</span>
+                <div id="branding">
+                    <span id="companyName">Internextera</span>&nbsp;<span id="logoImage"><asp:Image runat="server" AlternateText="Company Logo" SkinID="logoImage" ID="imgLogo" /></span><br />
+                    <span id="slogan" style="text-align: center">Communications Content™</span>&nbsp;</div>
+                <div id="breadcrumbs">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" : " style="left: 420px; position: absolute; top: -16px; text-align: right" Font-Names="Verdana" Font-Size="0.8em" Width="286px">
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                    </asp:SiteMapPath>
+                </div>               
+            </div>
+            <div id="content" class="clearfix">
+                <div id="copy">  
+                    <%-- Page content goes here. Use proper headings (h1 to h6) to
+                    structure the text. --%>                  
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+                </div>
+                <div id="menu" style="text-align: justify; color: #ff9933;">
+                    <asp:SiteMapDataSource ID="siteMapDS" runat="server" ShowStartingNode="false" />
+                    <asp:Menu runat="server" ID="mainMenu" DataSourceID="siteMapDS" Font-Size="X-Large" />
+                    Phone: 1-416-259-4287<br />
+                    Skype: INTERNEXTERA<br />
+                    info@internextera.com</div>
+            <asp:Label ID="Label1" runat="server" Text="Copyright © 2007 Internextera. All Rights Reserved." Width="771px" style="text-align: center"></asp:Label></div>
+            <div id="bottomShadow">&nbsp;<%-- Leave blank. --%></div>
+            </div>
+    </form>
+</body>
+</html>

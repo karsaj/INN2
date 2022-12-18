@@ -1,0 +1,25 @@
+body {
+	background-image: url(../../App_Themes/Literature/Images/homepage/bg_tile.gif);
+}
+#mainwrapper {
+	background-image: url(../../App_Themes/Literature/Images/homepage/main_bg.png);
+}
+#topShadow {
+	background-image: url(../../App_Themes/Literature/Images/homepage/top_shadow.png);
+}
+
+#branding {bottom:28px;}
+
+#bottomShadow {
+	background-image: url(../../App_Themes/Literature/Images/homepage/bottom_shadow.png);
+}
+.leftColumn {
+	float: left;
+	display:inline;
+	width: 40%;
+}
+.rightColumn {
+	float: right;
+	display:inline;
+	width: 40%;
+}

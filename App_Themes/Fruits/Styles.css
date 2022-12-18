@@ -1,0 +1,438 @@
+body {
+	min-width: 780px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-image: url(Images/bg_tile.gif);
+	background-repeat: repeat;
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Grande", Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	color: #666666;
+	background-color: #FFFFFF;
+}		
+/* Typographic style rules adapted from http://www.thenoodleincident.com/tutorials/typography/ */
+
+h1, h2, h3, h4, h5, h6 {color: #FFDA09;}
+
+h1 {
+	margin: 0 0 0 -1em;
+	font-size: 2.0em;
+	font-weight: normal;
+}
+h2 {
+	clear: both;
+	margin: 1.2em 0em 1.2em -1em;
+	font-size: 1.7em;
+	font-weight: normal;
+}
+h3 {
+	margin: 1.2em 0em 1.2em -1em;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+h4 {
+	margin: 1.2em 0em 1.2em -1em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+h5 {
+	margin: 1.2em 0em 1.2em -1em;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+h6 {
+	margin: 1.2em 0em 1.2em -1em;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+pre {
+	font-family: monospace;
+	font-size: 1.0em;
+}
+
+strong, b {font-weight: bold;}
+
+acronym[title] {
+	cursor:help;
+	border-bottom:1px dotted #333333;
+	font-size: 95%;
+}
+#mainwrapper {			
+	margin: 0 auto;
+	width: 780px;
+	text-align: left;
+	background-repeat: repeat-y;
+	background-image: url(Images/main_bg.png);
+}
+#topShadow {
+	height: 20px;
+	background-image: url(Images/top_shadow.png);
+	background-repeat: no-repeat;
+}
+#header {
+	position: relative;
+	height: 206px;
+	margin-left: 10px;
+}
+#branding {
+	position: absolute;
+	right: 30px;
+	bottom: 45px;
+	z-index:1000;
+	text-align: right;
+	color: #FFDA09;
+}
+#companyName {
+	color: #FFDA09;
+	font-size: 40px;
+}
+
+#logoImage {vertical-align: bottom;}
+
+#slogan {
+	color: #00CC00;
+	font-size: 20px;
+}
+#breadcrumbs {
+	position: absolute;
+	left: 32px;
+	bottom: 12px; 
+	color: #00CC00;
+	font-weight: bold;
+}
+#breadcrumbs a {
+	text-decoration: underline;
+	color: #00CC00;
+}
+
+#breadcrumbs a:hover {text-decoration: none;}
+
+#content {
+	position:relative;
+	margin-top:35px;
+}
+
+/* Hide from IE5 Mac \*/
+* html #content {
+	height:1%;
+}
+/* End hide from IE5 Mac */
+
+#menu {
+	position:absolute;
+	left:40px;
+	top:0;
+	width: 180px;
+}
+#menu a {				
+	display:block !important;
+	margin-left:40px;	
+	background-image: none !important;
+	background-repeat: no-repeat;
+}		
+#menu .menuNormal {
+	border: 1px solid #FFFFFF;
+	color: #00CC00;
+	font-weight:bold;
+}
+#menu .menuHover {
+	border: 1px solid #1CCD1A;
+	background-color: #FFFFFF;
+	color: #00CC00;
+	background-image: url(Images/img_menu_hover.gif);
+	background-repeat:no-repeat;
+}
+#menu .menuSelected {
+	border: 1px solid #FFAF09;
+	background-color: #FFFFFF;
+	color: #FFDA09;
+	background-image: url(Images/img_menu_active.gif);
+	background-repeat:no-repeat;	
+}
+
+#menu .menuSelected .menuSelected {border:none;} /* khtml compatibility hack */
+
+#menu .subMenu table{			    
+	background-color: #FFFFFF;
+	background-image: url(Images/subMenu_bg.png);
+	background-repeat:repeat-y;
+}
+#menu .subMenu a {
+	width:140px;
+	border-style:none;
+}
+
+* html #menu .subMenu a {width:139px;}
+
+#menu .subMenuNormal {			 
+	color: #00CC00;
+	font-weight: bold;
+	background-color:#FFFFFF;	
+}
+
+html>body .subMenuNormal {border: 1px solid transparent;}
+
+#menu .subMenuHover {
+    border:1px solid #1CCD1A;
+    background-color:#FFFFFF;
+    color: #00CC00;
+}
+* html #menu .subMenuHover {
+    background-color:#FFFFFF;
+    color: #00CC00;
+ }
+#menu .subMenuHover td {
+    background-image: url(Images/img_menu_hover.gif);
+	background-repeat:no-repeat;
+}
+html>body #menu .subMenuHover{
+ 	background-color:#FFFFFF;
+	color: #00CC00;
+	background-image: url(Images/img_menu_hover.gif);
+	background-repeat:no-repeat;
+}
+html>body #menu .subMenuHover td{
+      background-color:transparent;
+      background-image:none;
+}
+#copy {			
+	position:static;
+	margin-left:240px;
+	margin-right:10px;
+	padding: 0 3.5em 4em;
+}
+
+* html #copy {padding:0 5em 4em 2em;}
+
+/* Hide from IE5 Mac \*/
+* html #copy {height:1%;}
+/* End hide from IE Mac*/
+
+#copy ol, #copy ul, #copy li {
+	margin-top: 0.2em;
+	margin-bottom: 0.1em; 
+	font-size: 1.0em;
+	line-height: 1.8em;
+}
+
+* html #copy ul {padding-left:18px;}
+
+* html #copy li {padding-left:0.5em;}
+
+#copy li {list-style-image: url(Images/bullet.gif);}
+
+#copy p {
+	font-size: 1.0em;
+	line-height: 1.8em;
+}
+
+#copy li > p {margin-top: 0.2em;}
+
+#copy .pullQuote {
+	float: right;
+	display:inline;
+	width: 25%;
+	margin: 1em 0 1em 1em;
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 130%;
+	background-image: url(Images/logo_mini.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	color: #0FCF0F;
+}
+
+#copy a {color:#0FCF0F;}
+
+#copy a:link {text-decoration:underline;}
+
+#copy a:hover {text-decoration:none;}
+
+#copy .textBox {
+	border:1px solid #FFDA09;
+	margin-left: 1em;
+	background-color:#FFEB79;
+}
+
+#copy .textBox:focus {background-color:#FFFFFF;}
+
+#copy .dropDownlist {
+	margin-left: 1em;
+	background-color: #FFEB79 !important;
+}
+
+#copy .radioButtonList {margin-left: 1em;}
+
+#copy fieldset {
+	border:1px solid #1CCD1A;
+	padding: 1.5em;
+}
+
+#copy legend {color: #666666;}
+
+#copy .button {
+    margin:1em 0;
+    border:1px solid #1CCD1A;
+    background-color:#FFEB79;
+    color:#333333;
+} 
+
+* html .button {padding:0 0.5em;} 
+
+#bottomShadow {
+	height: 10px;		
+	background-image: url(Images/bottom_shadow.png);
+	background-repeat: no-repeat;
+}
+
+* html #bottomShadow {margin-bottom:-8px;}
+
+.clearfix:after {
+  content: "."; 
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+ .clearfix {display: inline-block;} /* Fixes IE/Mac */
+ 
+/* Hides from IE-mac \*/
+* html .clearfix,
+* html .clearfix * {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+@media print {	
+	body {
+		border-bottom: 1px solid #000;
+		color: #333333 !important;
+		background:#FFFFFF !important;		
+		font-size:10pt;
+		line-height:12pt;
+	}	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		color: #333333;
+	}
+
+	#mainwrapper,#topShadow,#bottomShadow {background:none;}
+
+	#header {
+		position: static;
+		height: auto;
+	}	
+
+	#menu,#mastheadImage {display:none;}	
+
+	#branding {
+		position: static;		
+		text-align:left;
+		margin: 0;
+		padding: 0;
+	}
+
+	#companyName {color:#1CCD1A;}
+
+	#breadcrumbs {
+		position: static;
+		margin: 1em 0;
+		padding-bottom: 2em;
+		border-bottom: 1px solid #000000;
+		color: #333333;
+	}
+
+	#breadcrumbs a {color: #333333;}
+
+	#copy {
+		margin-left:0;
+		padding: 0 2em;
+		width: 80%
+	}
+
+	#copy a {color: #333333;}
+
+	#copy li {
+		list-style-image: none;
+		list-style-type: disc;
+	}
+
+	#copy .pullQuote {display: none;}
+
+	#copy .textBox {
+		border: 1px solid #333333;
+		background:none;
+	}
+
+	#copy .textBox:focus {background:none;}
+
+	#copy fieldset {border:1px solid #333333;}
+
+    #copy legend {padding-bottom:1em;}
+
+	#copy .dropDownlist {background:none;}
+}
+
+.shadetabs{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+}
+
+.shadetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+background: white url(shade.gif) top left repeat-x;
+}
+
+.shadetabs li a:visited{
+color: #2d2b2b;
+}
+
+.shadetabs li a:hover{
+text-decoration: underline;
+color: #2d2b2b;
+}
+
+.shadetabs li.selected{
+position: relative;
+top: 1px;
+}
+
+.shadetabs li.selected a{ /*selected main tab style */
+background-image: url(shadeactive.gif);
+border-bottom-color: white;
+}
+
+.shadetabs li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontentstyle{ /*style of tab content oontainer*/
+border: 1px solid gray;
+width: 450px;
+margin-bottom: 1em;
+padding: 10px;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block!important;
+}
+}

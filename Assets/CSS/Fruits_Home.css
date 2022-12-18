@@ -1,0 +1,30 @@
+body {
+	background-image: url(../../App_Themes/Fruits/Images/homepage/bg_tile.gif);
+}
+#mainwrapper {
+	background-image: url(../../App_Themes/Fruits/Images/homepage/main_bg.png);
+}
+#topShadow {
+	background-image: url(../../App_Themes/Fruits/Images/homepage/top_shadow.png);
+}
+
+#companyName {color: #EA4356;}
+
+#slogan {color: #00CC00;}
+
+#bottomShadow {
+	background-image: url(../../App_Themes/Fruits/Images/homepage/bottom_shadow.png);
+}
+
+h1, h2, h3, h4, h5, h6 {color: #1CCD1A;}
+
+.leftColumn {
+	float: left;
+	display:inline;
+	width: 40%;
+}
+.rightColumn {
+	float: right;
+	display:inline;
+	width: 40%;
+}
